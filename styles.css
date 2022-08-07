@@ -1,0 +1,46 @@
+body {
+    text-align: center;
+}
+
+button {
+    font-family: 'firgine';
+    font-size: 1.5em;
+    margin: 7% 2%;
+}
+
+.attacks {
+    display: inline-block;
+    width: 50%;
+}
+
+.container {
+    display: inline-block;
+    width: 50%;
+}
+
+#header-text {
+    font-family: 'firgine';
+    font-size: 5em;
+}
+
+.row {
+    display: flex;
+    vertical-align: middle;
+}
+
+
+/* Boss */
+
+#boss-img {
+    margin-top: 1%;
+    height: auto;
+    width: 50%;
+}
+
+
+/* Fonts */
+
+@font-face {
+    font-family: 'firgine';
+    src: url('firgine.otf');
+}
