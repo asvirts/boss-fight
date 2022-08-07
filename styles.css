@@ -1,11 +1,13 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     text-align: center;
 }
 
 button {
     font-family: 'firgine';
     font-size: 1.5em;
-    margin: 7% 2%;
+    margin: 2% 2%;
 }
 
 .attacks {
@@ -18,9 +20,14 @@ button {
     width: 50%;
 }
 
-#header-text {
+h1 {
     font-family: 'firgine';
     font-size: 5em;
+}
+
+h2 {
+    font-family: 'firgine';
+    font-size: 3em;
 }
 
 .row {
@@ -31,7 +38,7 @@ button {
 
 /* Boss */
 
-#boss-img {
+img {
     margin-top: 1%;
     height: auto;
     width: 50%;
