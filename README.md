@@ -11,4 +11,4 @@ Defensive raises your shields and reducing your incoming damage as well as your 
 Can YOU defeat Onyxia, the Black Dragon?!
 
 
-# Live preview here: https://asvirts.github.io/onyxias-lair/
+# Live preview here: <a href="https://asvirts.github.io/onyxias-lair/" target="_blank">https://asvirts.github.io/onyxias-lair</a>
