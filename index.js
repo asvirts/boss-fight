@@ -1,7 +1,28 @@
+// Starting Attributes
+
 let playerHP = 50
 let bossHP = 50
 let bossAlive = true
 let playerAlive = true
+
+
+// Restart Game
+
+function restartGame() {
+    playerHP = 50
+    bossHP = 50
+    
+    element = document.getElementById("bossHP");
+    element.innerHTML = bossHP;
+
+    element = document.getElementById("playerHP");
+    element.innerHTML = playerHP;
+
+    alert("Good luck, adventurer!")
+}
+
+
+// Normal Attack
 
 function normalAttack() {
     element = document.getElementById("bossHP");
@@ -10,16 +31,25 @@ function normalAttack() {
     element.innerHTML = bossHP;
 
     element = document.getElementById("playerHP");
-    let newPlayerHP = playerHP - 3;
+    let newPlayerHP = playerHP - 4;
     playerHP = newPlayerHP;
     element.innerHTML = playerHP;
 
-    alert("3 damage to boss and 3 damage to you")
+    if (bossHP <= 0) {
+        alert("You have defeated the boss!")
+    }
+    
+    if (playerHP <= 0) {
+        alert("You have been defeated.")
+    }
 }
+
+
+// Power Attack
 
 function powerAttack() {
     element = document.getElementById("bossHP");
-    let newBossHP = bossHP - 7;
+    let newBossHP = bossHP - 8;
     bossHP = newBossHP;
     element.innerHTML = bossHP;
 
@@ -28,8 +58,16 @@ function powerAttack() {
     playerHP = newPlayerHP;
     element.innerHTML = playerHP;
 
-    alert("7 damage to boss and 7 damage to you")
+    if (bossHP <= 0) {
+        alert("You have defeated the boss!")
+    }
+    
+    if (playerHP <= 0) {
+        alert("You have been defeated.")
+    }
 }
+
+// Defensive Attack
 
 function defensiveAttack() {
     element = document.getElementById("bossHP");
@@ -38,10 +76,16 @@ function defensiveAttack() {
     element.innerHTML = bossHP;
 
     element = document.getElementById("playerHP");
-    let newPlayerHP = playerHP - 1;
+    let newPlayerHP = playerHP - 2;
     playerHP = newPlayerHP;
     element.innerHTML = playerHP;
 
-    alert("1 damage to boss and 1 damage to you")
+    if (bossHP <= 0) {
+        alert("You have defeated the boss!")
+    }
+    
+    if (playerHP <= 0) {
+        alert("You have been defeated.")
+    }
 }
 
