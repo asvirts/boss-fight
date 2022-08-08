@@ -28,6 +28,8 @@ function normalAttack() {
     let normAttPlayer = Math.floor(Math.random() * 8) + 1;
     let normAttBoss = Math.floor(Math.random() * 8) + 1;
     
+    alert("You have dealt " + normAttBoss + " damage to Onyxia and she dealt " + normAttPlayer + " damage to you.")
+
     element = document.getElementById("bossHP");
     let newBossHP = bossHP - normAttBoss;
     bossHP = newBossHP;
@@ -54,8 +56,9 @@ function normalAttack() {
 
 function powerAttack() {
     let powAttPlayer = Math.floor(Math.random() * 15) + 1;
-
     let powAttBoss = Math.floor(Math.random() * 15) + 1;
+
+    alert("You have dealt " + powAttBoss + " damage to Onyxia and she dealt " + powAttPlayer + " damage to you.")
     
     element = document.getElementById("bossHP");
     let newBossHP = bossHP - powAttBoss;
@@ -83,8 +86,9 @@ function powerAttack() {
 
 function defensiveAttack() {
     let defAttPlayer = Math.floor(Math.random() * 5) + 1;
-
     let defAttBoss = Math.floor(Math.random() * 5) + 1;
+
+    alert("You have dealt " + defAttBoss + " damage to Onyxia and she dealt " + defAttPlayer + " damage to you.")
     
     element = document.getElementById("bossHP");
     let newBossHP = bossHP - defAttBoss;
@@ -95,8 +99,6 @@ function defensiveAttack() {
     let newPlayerHP = playerHP - defAttPlayer;
     playerHP = newPlayerHP;
     element.innerHTML = playerHP;
-
- 
 
     if (bossHP <= 0) {
         alert("You have defeated Onyxia!")
