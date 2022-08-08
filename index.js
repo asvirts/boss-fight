@@ -18,29 +18,34 @@ function restartGame() {
     element = document.getElementById("playerHP");
     element.innerHTML = playerHP;
 
-    alert("Good luck, adventurer!")
+    alert("Everybody deserves another chance. Good luck, adventurer!")
 }
 
 
 // Normal Attack
 
 function normalAttack() {
+    let normAttPlayer = Math.floor(Math.random() * 8) + 1;
+    let normAttBoss = Math.floor(Math.random() * 8) + 1;
+    
     element = document.getElementById("bossHP");
-    let newBossHP = bossHP - 3;
+    let newBossHP = bossHP - normAttBoss;
     bossHP = newBossHP;
     element.innerHTML = bossHP;
 
     element = document.getElementById("playerHP");
-    let newPlayerHP = playerHP - 4;
+    let newPlayerHP = playerHP - normAttPlayer;
     playerHP = newPlayerHP;
     element.innerHTML = playerHP;
 
     if (bossHP <= 0) {
-        alert("You have defeated the Onyxia!")
+        alert("You have defeated Onyxia!")
+        alert("Want to try your luck again?")
     }
     
     if (playerHP <= 0) {
         alert("You have been defeated.")
+        restartGame()
     }
 }
 
@@ -48,44 +53,59 @@ function normalAttack() {
 // Power Attack
 
 function powerAttack() {
+    let powAttPlayer = Math.floor(Math.random() * 15) + 1;
+
+    let powAttBoss = Math.floor(Math.random() * 15) + 1;
+    
     element = document.getElementById("bossHP");
-    let newBossHP = bossHP - 8;
+    let newBossHP = bossHP - powAttBoss;
     bossHP = newBossHP;
     element.innerHTML = bossHP;
 
     element = document.getElementById("playerHP");
-    let newPlayerHP = playerHP - 7;
+    let newPlayerHP = playerHP - powAttPlayer;
     playerHP = newPlayerHP;
     element.innerHTML = playerHP;
 
     if (bossHP <= 0) {
-        alert("You have defeated the Onyxia!")
+        alert("You have defeated Onyxia!")
+        alert("Want to try your luck again?")
     }
     
     if (playerHP <= 0) {
         alert("You have been defeated.")
+        restartGame()
     }
 }
+
 
 // Defensive Attack
 
 function defensiveAttack() {
+    let defAttPlayer = Math.floor(Math.random() * 5) + 1;
+
+    let defAttBoss = Math.floor(Math.random() * 5) + 1;
+    
     element = document.getElementById("bossHP");
-    let newBossHP = bossHP - 1;
+    let newBossHP = bossHP - defAttBoss;
     bossHP = newBossHP;
     element.innerHTML = bossHP;
 
     element = document.getElementById("playerHP");
-    let newPlayerHP = playerHP - 2;
+    let newPlayerHP = playerHP - defAttPlayer;
     playerHP = newPlayerHP;
     element.innerHTML = playerHP;
 
+ 
+
     if (bossHP <= 0) {
-        alert("You have defeated the Onyxia!")
+        alert("You have defeated Onyxia!")
+        alert("Want to try your luck again?")
     }
     
     if (playerHP <= 0) {
         alert("You have been defeated.")
+        restartGame()
     }
 }
 
