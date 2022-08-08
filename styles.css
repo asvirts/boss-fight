@@ -16,6 +16,20 @@ button {
     margin: 2% 2%;
 }
 
+#restart-button {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+@media (max-width: 768px) {
+    #restart-button {
+        position: absolute;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+}
+
 .attacks {
     display: inline-block;
     width: 50%;
@@ -40,7 +54,26 @@ h2 {
 
 h3 {
     font-size: 2em;
+    font-weight: 900;
     margin-bottom: 1%;
+}
+
+#instructions {
+    position: absolute;
+    text-align: left;
+    width: 18%;
+    top: 8%;
+    left: 11%;
+}
+
+@media (max-width: 768px) {
+    #instructions {
+        position: absolute;
+        text-align: left;
+        width: 75%;
+        top: 68%;
+        left: 15%;
+    }
 }
 
 .row {
@@ -54,7 +87,7 @@ h3 {
 img {
     margin-top: 1%;
     height: auto;
-    width: 40%;
+    width: 35%;
 }
 
 

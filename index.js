@@ -36,7 +36,7 @@ function normalAttack() {
     element.innerHTML = playerHP;
 
     if (bossHP <= 0) {
-        alert("You have defeated the boss!")
+        alert("You have defeated the Onyxia!")
     }
     
     if (playerHP <= 0) {
@@ -59,7 +59,7 @@ function powerAttack() {
     element.innerHTML = playerHP;
 
     if (bossHP <= 0) {
-        alert("You have defeated the boss!")
+        alert("You have defeated the Onyxia!")
     }
     
     if (playerHP <= 0) {
@@ -81,7 +81,7 @@ function defensiveAttack() {
     element.innerHTML = playerHP;
 
     if (bossHP <= 0) {
-        alert("You have defeated the boss!")
+        alert("You have defeated the Onyxia!")
     }
     
     if (playerHP <= 0) {

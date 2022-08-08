@@ -17,11 +17,26 @@
         <div>
             <h1>BOSS BATTLE!</h1>
         </div>
+
+        <div>
+          <button id="restart-button" onclick="restartGame()">Restart</button>
+        </div>
+
+        <div id="instructions">
+          <h3>Instructions:</h3>
+          <ul>
+            <li>Try to beat Onyxia!</li>
+            <li><strong>Normal Attacks</strong> deal balanced damage to Onyxiya and you</li>
+            <li><strong>Power Attacks</strong> have a chance to deal much more damage, but also leave you more vulnerable</li>
+            <li><strong>Defensive</strong> raises your shield reducing incoming damage and damage dealt</li>
+            <li>If you are defeated, click the <strong>Restart</strong> button to be revived</li>
+          </ul>
+        </div>
       
         <div>
             <h2>Boss HP:</h2>
             <h3 id="bossHP">50</h3>
-            <img src="deathwing.png">
+            <img src="onyxia.png">
         </div>
 
         <!-- HP -->
@@ -44,32 +59,28 @@
               </div>
             </div>
             <div class="row align-items-center">
-              <div class="col">
+              <div class="col col-sm-4">
                 3 to 10 damage
               </div>
-              <div class="col">
+              <div class="col col-sm-4">
                 8 to 15 damage
               </div>
-              <div class="col">
+              <div class="col col-sm-4">
                 1 to 6 damage
               </div>
             </div>
             <div class="row align-items-end">
-              <div class="col">
+              <div class="col col-sm-4">
                 -3 to 10 HP
               </div>
-              <div class="col">
+              <div class="col col-sm-4">
                 -8 to 15 HP
               </div>
               
-              <div class="col">
+              <div class="col col-sm-4">
                 -1 to 6 HP
               </div>
             </div>
-        </div>
-
-        <div>
-          <button onclick="restartGame()">Restart</button>
         </div>
 
 
